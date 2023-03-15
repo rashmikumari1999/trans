@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewPort" contain="width=device-width, initial scale=1.0">
+</head>
+<body>
+    <form action="{% url 'counter' %} ">
+        <textarea name="message" rows="20" cols="70" ></textarea>
+        <br>
+        <input type="submit" value="count now" />
+      
+      </form>
+<h1> result page</h1>
+<h2> enter your text</h2>
+{{msg}}
+<h1> This text contains.{{length}} words</h1>
+    </body>
+    <html>
